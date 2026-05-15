@@ -794,7 +794,7 @@
         <div class="contact-grid">
             <div class="contact-card"><i class="fas fa-envelope"></i><h4>Email</h4><a href="mailto:bcs22006@pugc.edu.pk">bcs22006@pugc.edu.pk</a></div>
             <div class="contact-card"><i class="fab fa-linkedin"></i><h4>LinkedIn</h4><a href="https://linkedin.com/in/mohsin-saleem-dev" target="_blank">Connect on LinkedIn</a></div>
-            <div class="contact-card"><i class="fab fa-github"></i><h4>GitHub</h4><a href="https://github.com/mohsinsaleem-dev" target="_blank">github.com/mohsinsaleem-dev</a></div>
+            <div class="contact-card"><i class="fab fa-github"></i><h4>GitHub</h4><a href="https://github.com/Itx-Mohsin-Dev" target="_blank">github.com/mohsinsaleem-dev</a></div>
         </div>
 
         <div class="footer"><p>© 2026 Mohsin Saleem | Built with <i class="fas fa-heart" style="color: #ef4444;"></i> for recruiters</p></div>
@@ -810,7 +810,8 @@
         projects.forEach(p=>{let card=document.createElement('div');card.className='project-card';card.innerHTML=`<div class="project-icon"><i class="fas ${p.icon}"></i></div><h3>${p.name}</h3><div class="project-tech">${p.tech}</div><ul class="project-features">${p.features.map(f=>`<li><i class="fas fa-check-circle"></i> ${f}</li>`).join('')}</ul><div class="project-links"><a href="${p.github}" target="_blank" class="github-link"><i class="fab fa-github"></i> View Code</a><a href="${p.demo}" target="_blank" class="demo-link"><i class="fas fa-external-link-alt"></i> Live Demo</a></div>`;grid.appendChild(card);});
 
         // Download CV
-        document.getElementById('downloadCV').addEventListener('click',(e)=>{e.preventDefault();alert("Press Ctrl+P (Windows) / Cmd+P (Mac) → Save as PDF");});
+       // Download CV
+document.getElementById('downloadCV').addEventListener('click',(e)=>{e.preventDefault();window.location.href = "Mohsin_Saleem_CV.pdf";});
 
         // Dark/Light Mode Toggle - Default Dark Mode
         let isDark = true; // Default is dark mode
